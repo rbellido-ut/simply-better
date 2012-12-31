@@ -1,0 +1,35 @@
+.banner a {
+    color:#1C1C1C;
+}
+
+.page-header {
+    text-align:center;
+}
+
+.banner-nav li{
+    display:inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+a:link {
+    color:#1C1C1C;
+}
+
+a:hover {
+    color: #08C;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #949494;
+}
+
