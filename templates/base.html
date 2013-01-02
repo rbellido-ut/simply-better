@@ -8,21 +8,26 @@
         <link href="theme/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
         <link href="theme/css/otherblog.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700,800' rel='stylesheet' type='text/css'>
         {% endblock head%}
     </head>
 
     <body>
-        <header class="span10 navbar-static-top">
-        <hr/>
-            <h1><a href="{{ SITEURL }}/" style="color:#1C1C1C">{{ SITENAME }}</a></h1>
-            <nav>
-            <ul class="banner-nav">
-                {% for title, link in MENUITEMS %}
-                <li><small><a href="{{ link }}">{{ title }}</a></small></li>
-                {% endfor %}
-            </ul>
-            </nav>
-        <hr/>
+        <header class="banner navbar-static-top" >
+        <div class="container">
+            <div class="span12">
+            <hr/>
+                <h1><a href="{{ SITEURL }}/" style="color:#1C1C1C;">{{ SITENAME }}</a></h1>
+                <nav>
+                <ul class="banner-nav">
+                    {% for title, link in MENUITEMS %}
+                    <li><small><a href="{{ link }}">{{ title }}</a></small></li>
+                    {% endfor %}
+                </ul>
+                </nav>
+            <hr/>
+            </div> <!-- /span12 -->
+        </div> <!--/container -->
         </header>
 
         <div class="content">
@@ -35,19 +40,35 @@
         </div> <!-- /content -->
 
         <footer class="navbar-static-bottom">
-        <div class="row">
-        <!-- TODO:archives here -->
+        <div class="container">
+        <div class="span12">
+            <hr/>
+            <div class="row">
+                <!-- TODO:archives here -->
 
-            <div class="span4 pull-right">
-            <small>
-                Powered by <a href="http://getpelican.com/">Pelican</a>,
-                <a href="http://python.org">Python</a>, and
-                <a href="http://twitter.github.com/bootstrap/">Twitter's Bootstrap</a>.
-                Theme: Simply Better by yours truly.
-                Content &copy; 2012 Ronald Bellido. All Rights Reserved.
-            </small>
+                <div class="span3">
+                    <small>
+                        Content &copy; 2012 Ronald Bellido. <br/> All Rights Reserved.
+                    </small>
+                </div>
+
+                <div class="span3 offset2">
+                    <small>
+                        Theme: <a href="https://github.com/rbellido/simply-better">Simply Better</a>
+                        by <a href="http://rmb.name">Ronald Bellido</a>.
+                    </small>
+                </div>
+
+                <div class="span3 pull-right">
+                <small>
+                    Powered by <a href="http://getpelican.com/">Pelican</a>,
+                    <a href="http://python.org">Python</a>, and
+                    <a href="http://twitter.github.com/bootstrap/">Twitter's Bootstrap</a>.
+                </small>
+                </div>
             </div>
-        </div>
+        </div> <!-- /span12 -->
+        </div> <!-- /container-->
         </footer> <!--/footer -->
 
         <script src="http://code.jquery.com/jquery-latest.js"></script>

@@ -1,17 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-    <div class="page-header">
-        <h2 id="article-header">
-            {{ article.title }}
-        </h2>
+    <div class="article-header">
+        <h2>{{ article.title }}</h2>
         <small>
             <!--TODO: change date format -->
             {{ article.locale_date }}
         </small>
     </div> <!-- /page-header -->
 
-    <div class="span8">
+    <div class="span10 post-content">
         {{ article.content }}
     </div>
 
