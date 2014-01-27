@@ -10,7 +10,7 @@ It also features the Merriweather and Open Sans fonts from Google
 Web Fonts.
 
 See this theme in action at my blog:
-[webdevisfun.rmb.name](http://webdevisfun.rmb.name).
+[rmb.name](http://rmb.name).
 
 Pelican Settings Used
 ---------------------
